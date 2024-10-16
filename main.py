@@ -1,31 +1,17 @@
-class Square:
-    def __init__(self, x, y, side, color):
-        self.x = x
-        self.y = y
-        self.side = side
-        self.color = color
-
-    def draw(self, canvas):
-        pass
+from classes import Rectangle, Canvas, Square
 
 
-class Rectangle:
-    def __init__(self, x, y, width, height, color):
-        self.x = x
-        self.y = y
-        self.width = width
-        self.height = height
-        self.color = color
+canvas_height = int(input("How many pixels tall do you want your canvas: "))
+canvas_width = int(input("How many pixels wide do you want your canvas: "))
+answer = input("Do you want to customize the color of the canvas, Yes or No: ")
 
-    def draw(self, canvas):
-        pass
+match answer:
+    case "Yes":
+        canvas_red =
+        canvas_green = int(input("Enter the number for Red (0-255): "))
 
 
-class Canvas:
-    def __init__(self, width, height, color):
-        self.width = width
-        self.height = height
-        self.color = color
-
-    def make(self, image_path):
-        pass
+canvas = Canvas(height=canvas_height, width=canvas_width, color=(255, 255, 255))
+r1 = Rectangle(x=1, y=6, height=7, width=18, color=(100, 200, 125))
+r1.draw(canvas)
+canvas.make('canvas.png')
